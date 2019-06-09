@@ -1,0 +1,21 @@
+{
+  "name": "@knaydenov/material-breadcrumbs",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "ng-packagr -p ng-package.json && yarn bundle-styles",
+    "bundle-styles": "scss-bundle -c scss-bundle.config.json"
+  },
+  "peerDependencies": {
+    "@angular/common": "^6.0.0-rc.0 || ^6.0.0",
+    "@angular/core": "^6.0.0-rc.0 || ^6.0.0",
+    "@angular/material": "^6.4.1",
+    "@angular/router": "^6.0.9",
+    "@angular/cdk": "^6.4.1"
+  },
+  "devDependencies": {
+    "@angular/cdk": "^6.4.1",
+    "@angular/material": "^6.4.1",
+    "@angular/router": "^6.0.9",
+    "scss-bundle": "^2.3.2"
+  }
+}

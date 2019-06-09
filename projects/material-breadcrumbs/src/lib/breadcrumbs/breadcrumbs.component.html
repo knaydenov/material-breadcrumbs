@@ -1,0 +1,13 @@
+<div class="breadcrumbs">
+  <div class="container">
+    <div class="breadcrumb" *ngFor="let breadcrumb of breadcrumbs; let i = index">
+      <div class="splitter" *ngIf="i > 0 && i < breadcrumbs.length">
+        <mat-icon>keyboard_arrow_right</mat-icon>
+      </div>
+      <div [ngClass]="{'label': true, 'active': i == (breadcrumbs.length -1)}">
+        <span *ngIf="!breadcrumb.routerLink">{{ breadcrumb.label }}</span>
+        <a *ngIf="breadcrumb.routerLink" [routerLink]="breadcrumb.routerLink">{{ breadcrumb.label }}</a>
+      </div>
+    </div>
+  </div>
+</div>

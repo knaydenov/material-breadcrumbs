@@ -1,0 +1,35 @@
+.breadcrumbs {
+    height: 30px;
+}
+.container {
+    display: flex;
+    padding-left: 24px;
+    height: 100%;
+}
+.breadcrumb {
+    align-items: center;
+    display: flex;
+}
+
+.label {
+    opacity: .54;
+    white-space: nowrap;
+
+    &.active {
+        opacity: 1;
+    }
+    
+    span {
+
+    }
+
+    a {
+        color: inherit;
+    }
+}
+
+.splitter {
+    height: 16px;
+    opacity: .54;
+    padding: 0 4px;
+}

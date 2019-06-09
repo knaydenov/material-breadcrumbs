@@ -1,0 +1,4 @@
+{
+    "entry": "./src/lib/_theme.scss",
+    "dest": "../../dist/material-breadcrumbs/_theme.scss"
+  }
